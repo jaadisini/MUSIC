@@ -1,4 +1,4 @@
-import re
+1import re
 from os import getenv
 
 from dotenv import load_dotenv
@@ -43,6 +43,8 @@ GIT_TOKEN = getenv(
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/stayheresay")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/cillsupport")
+
+SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "3000"))
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
