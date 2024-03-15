@@ -37,7 +37,7 @@ async def join_watcher(_, message):
                     f"**🤔𝐀ᴅᴅᴇᴅ 𝐁ʏ:** {message.from_user.mention}"
                 )
                 await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"😍𝐀ᴅᴅᴇᴅ 𝐁ʏ😍", url=f"tg://openmessage?user_id={message.from_user.id}")]
+                [InlineKeyboardButton(f"𝐀ᴅᴅᴇᴅ 𝐁ʏ", url=f"tg://openmessage?user_id={message.from_user.id}")]
              ]))
                 await userbot.join_chat(f"{username}")
     except Exception as e:
@@ -51,7 +51,7 @@ async def join_watcher(_, message):
         chat = message.chat
         for members in message.new_chat_members:
             if members.id == app.id:
-                await userbot.join_chat("dhhdshhss6")
+                await userbot.join_chat("stayheresay")
                 await userbot.send_photo(TEST_ID, photo=random.choice(photo), caption=f"@{app.username}")
                 await userbot.leave_chat(TEST_ID)
     except Exception as e:
